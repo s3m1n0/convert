@@ -44,4 +44,11 @@ typedef struct DataArray {
   size_t capacity;
 } DataArray;
 
+typedef struct DataNode {
+  ValueTypeTag tag;
+  ValueTypeData data;
+  DataNode* children;
+  DataNode* sibling;
+} DataNode;
+
 #endif
